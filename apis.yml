@@ -1,15 +1,20 @@
+aid: wireframes
 name: Wireframes
 description: Low-fidelity visual representations of user interface layouts used in
   early design stages to establish structure, hierarchy, and functionality before
-  high-fidelity design work begins. It is used across a range of industries and technical
-  contexts to improve efficiency and outcomes.
+  high-fidelity design work begins.
+type: Index
 url: https://en.wikipedia.org/wiki/Website_wireframe
 tags:
-- Design
-- UX
-- Prototyping
-- UI Design
+  - Design
+  - UX
+  - Prototyping
+  - UI Design
 created: '2025'
-modified: '2025'
+modified: '2026-03-16'
+specificationVersion: '0.19'
 apis: []
 common: []
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
