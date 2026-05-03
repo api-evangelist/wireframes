@@ -1,0 +1,25 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "wf": "https://www.w3.org/ns/wireframes/",
+    "Wireframe": "wf:Wireframe",
+    "WireframeComponent": "wf:WireframeComponent",
+    "DesignSystem": "wf:DesignSystem",
+    "DesignToken": "wf:DesignToken",
+    "Prototype": "wf:Prototype",
+    "fidelity": "wf:fidelity",
+    "annotations": "wf:annotations",
+    "interactive": "wf:interactive",
+    "linkedScreen": "wf:linkedScreen",
+    "designToken": "wf:designToken",
+    "position": "wf:position",
+    "dimensions": "wf:dimensions",
+    "userFlow": "wf:userFlow",
+    "componentType": "wf:componentType",
+    "name": "schema:name",
+    "description": "schema:description",
+    "type": "schema:additionalType",
+    "CreativeWork": "schema:CreativeWork",
+    "SoftwareApplication": "schema:SoftwareApplication"
+  }
+}

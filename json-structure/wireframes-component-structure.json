@@ -1,0 +1,16 @@
+{
+  "name": "Wireframe Component",
+  "description": "Structure of a UI component within a wireframe design file.",
+  "fields": [
+    { "name": "id", "type": "string", "required": true, "description": "Unique identifier." },
+    { "name": "name", "type": "string", "required": true, "description": "Component name." },
+    { "name": "type", "type": "string", "required": true, "description": "UI type: Button, Input, Navigation, Header, Footer, Card, Modal, Form, Table, etc." },
+    { "name": "fidelity", "type": "string", "required": false, "description": "Level of detail: Low, Medium, High." },
+    { "name": "position", "type": "object", "required": false, "description": "Canvas x/y coordinates." },
+    { "name": "dimensions", "type": "object", "required": false, "description": "Width and height in pixels." },
+    { "name": "annotations", "type": "array<string>", "required": false, "description": "Design notes attached to the component." },
+    { "name": "interactive", "type": "boolean", "required": false, "description": "Whether the component has prototype links." },
+    { "name": "linkedScreen", "type": "string", "required": false, "description": "Navigation target screen ID." },
+    { "name": "designToken", "type": "string", "required": false, "description": "Associated design token reference." }
+  ]
+}

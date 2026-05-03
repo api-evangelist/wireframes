@@ -1,0 +1,122 @@
+vocabulary:
+  name: Wireframes Vocabulary
+  description: >-
+    Domain vocabulary for wireframe design covering UI/UX design processes,
+    wireframing tools, prototyping methodologies, and design system concepts
+    used in the software product design lifecycle.
+  version: '2026-05-03'
+  tags:
+    - Design
+    - Prototyping
+    - UI Design
+    - UX
+    - Wireframing
+
+  domains:
+    - name: Wireframing Concepts
+      description: Fundamental terms related to wireframe design practice.
+      terms:
+        - term: Wireframe
+          definition: >-
+            A low-fidelity visual representation of a user interface layout
+            that establishes structure, hierarchy, and functionality without
+            detailed visual design elements such as color, typography, or imagery.
+        - term: Low-Fidelity
+          definition: >-
+            A design representation that uses simplified, schematic visuals
+            (boxes, lines, placeholders) to focus on structure rather than
+            visual aesthetics.
+        - term: High-Fidelity
+          definition: >-
+            A detailed design representation that closely resembles the final
+            product with accurate visual design, content, and interactions.
+        - term: Prototype
+          definition: >-
+            An interactive mockup of a product that simulates user flows and
+            interactions, enabling usability testing before development begins.
+        - term: Mockup
+          definition: >-
+            A static, medium-to-high-fidelity visual representation of a
+            design that shows visual style but lacks interactivity.
+        - term: Information Architecture
+          definition: >-
+            The structural design of shared information environments, focusing
+            on how content is organized, labeled, and navigated.
+        - term: User Flow
+          definition: >-
+            A visual diagram depicting the steps a user takes through a product
+            to complete a specific task or achieve a goal.
+        - term: Annotation
+          definition: >-
+            Notes and labels added to a wireframe to explain design decisions,
+            behaviors, or requirements to stakeholders and developers.
+
+    - name: Design System
+      description: Terms related to structured design component systems.
+      terms:
+        - term: Component
+          definition: >-
+            A reusable UI element defined in a design system (e.g., button,
+            form field, modal dialog) that maintains consistency across designs.
+        - term: Design System
+          definition: >-
+            A collection of reusable components, patterns, guidelines, and
+            standards that enable consistent product design at scale.
+        - term: Style Guide
+          definition: >-
+            Documentation defining the visual language of a product including
+            typography, color palettes, spacing, and iconography.
+        - term: Token
+          definition: >-
+            A design decision stored as a named variable (e.g., color, spacing,
+            font size) that can be referenced across design and code systems.
+
+    - name: Tools
+      description: Terms related to wireframing and design tools.
+      terms:
+        - term: Figma
+          definition: >-
+            A cloud-based design and prototyping tool widely used for
+            wireframing, UI design, and collaborative design workflows.
+        - term: Balsamiq
+          definition: >-
+            A rapid wireframing tool that emphasizes sketch-style, low-fidelity
+            mockups for fast iteration and stakeholder communication.
+        - term: Axure RP
+          definition: >-
+            A professional wireframing and prototyping tool known for complex
+            interactive prototypes and developer-handoff documentation.
+        - term: Sketch
+          definition: >-
+            A vector design tool for macOS focused on UI/UX design with a
+            plugin ecosystem and developer handoff capabilities.
+        - term: UXPin
+          definition: >-
+            A design tool that uses real code components enabling designers
+            to work with the same UI elements developers will implement.
+        - term: Miro
+          definition: >-
+            A visual collaboration platform used for wireframing, brainstorming,
+            and design thinking workshops.
+
+    - name: API Integration
+      description: Terms relating to programmatic access to wireframing tools.
+      terms:
+        - term: Design API
+          definition: >-
+            A REST API provided by a design tool that allows programmatic
+            access to design files, components, assets, and metadata.
+        - term: Design Token Export
+          definition: >-
+            A feature that exports design tokens (colors, spacing, typography)
+            in a structured format for use in code (CSS variables, JSON).
+        - term: Developer Handoff
+          definition: >-
+            The process of transferring design specifications, assets, and
+            measurements to developers for implementation, often supported
+            by tool-specific integrations.
+        - term: Webhook
+          definition: >-
+            An HTTP callback mechanism used by design tools to notify
+            external systems when design events occur (e.g., file updated,
+            comment added, version published).

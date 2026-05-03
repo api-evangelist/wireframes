@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/api-evangelist/wireframes/blob/main/json-schema/wireframes-component-schema.json",
+  "title": "Wireframe Component",
+  "description": "A UI component within a wireframe design, representing a structural element such as a button, input field, navigation bar, or content block.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the component."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the component (e.g., Primary Button, Navigation Bar, Hero Section)."
+    },
+    "type": {
+      "type": "string",
+      "enum": ["Button", "Input", "Navigation", "Header", "Footer", "Card", "Modal", "Form", "Table", "Image", "Text", "Container", "List", "Breadcrumb", "Tabs", "Dropdown", "Custom"],
+      "description": "The UI component type."
+    },
+    "fidelity": {
+      "type": "string",
+      "enum": ["Low", "Medium", "High"],
+      "description": "The level of visual detail in the wireframe component."
+    },
+    "position": {
+      "type": "object",
+      "properties": {
+        "x": { "type": "number" },
+        "y": { "type": "number" }
+      },
+      "description": "The x/y position of the component on the wireframe canvas."
+    },
+    "dimensions": {
+      "type": "object",
+      "properties": {
+        "width": { "type": "number" },
+        "height": { "type": "number" }
+      },
+      "description": "The width and height of the component in pixels."
+    },
+    "annotations": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Notes and explanations attached to this component."
+    },
+    "interactive": {
+      "type": "boolean",
+      "description": "Whether this component has interactive states or prototype links."
+    },
+    "linkedScreen": {
+      "type": "string",
+      "description": "The ID of another screen this component navigates to when clicked."
+    },
+    "designToken": {
+      "type": "string",
+      "description": "Reference to a design token applied to this component."
+    }
+  },
+  "required": ["id", "name", "type"]
+}

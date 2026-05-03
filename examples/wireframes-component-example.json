@@ -1,0 +1,23 @@
+{
+  "id": "comp-nav-001",
+  "name": "Primary Navigation Bar",
+  "type": "Navigation",
+  "fidelity": "Low",
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "dimensions": {
+    "width": 1440,
+    "height": 64
+  },
+  "annotations": [
+    "Logo links to home page",
+    "Navigation items: Home, Products, Pricing, Blog, Contact",
+    "CTA button 'Get Started' in top right corner",
+    "Mobile: collapse to hamburger menu at 768px breakpoint"
+  ],
+  "interactive": true,
+  "linkedScreen": "screen-home-001",
+  "designToken": "nav-primary"
+}
