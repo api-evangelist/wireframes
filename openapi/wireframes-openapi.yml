@@ -1,0 +1,246 @@
+openapi: 3.1.0
+info:
+  title: Figma REST API
+  description: |
+    The Figma REST API enables programmatic access to Figma files, images, projects,
+    comments, users, components, and variables. Wireframes and designs can be read,
+    images rendered, and comments managed.
+  version: "1.0"
+  contact:
+    name: Figma
+    url: https://developers.figma.com/docs/rest-api/
+servers:
+  - url: https://api.figma.com
+    description: Figma REST API production server
+  - url: https://api.figma-gov.com
+    description: Figma REST API for Government customers
+security:
+  - personalAccessToken: []
+  - oauth2: []
+tags:
+  - name: Files
+  - name: Images
+  - name: Projects
+  - name: Comments
+  - name: Reactions
+  - name: Users
+  - name: Components
+paths:
+  /v1/me:
+    get:
+      tags: [Users]
+      summary: Get current user
+      operationId: getMe
+      responses:
+        "200": { description: OK }
+  /v1/files/{file_key}:
+    parameters:
+      - in: path
+        name: file_key
+        required: true
+        schema: { type: string }
+    get:
+      tags: [Files]
+      summary: Get file JSON
+      operationId: getFile
+      responses:
+        "200": { description: OK }
+  /v1/files/{file_key}/nodes:
+    parameters:
+      - in: path
+        name: file_key
+        required: true
+        schema: { type: string }
+    get:
+      tags: [Files]
+      summary: Get specific nodes from a file
+      operationId: getFileNodes
+      responses:
+        "200": { description: OK }
+  /v1/images/{file_key}:
+    parameters:
+      - in: path
+        name: file_key
+        required: true
+        schema: { type: string }
+    get:
+      tags: [Images]
+      summary: Render images of nodes in a file
+      operationId: getImages
+      responses:
+        "200": { description: OK }
+  /v1/files/{file_key}/images:
+    parameters:
+      - in: path
+        name: file_key
+        required: true
+        schema: { type: string }
+    get:
+      tags: [Images]
+      summary: Get image fill URLs for a file
+      operationId: getImageFills
+      responses:
+        "200": { description: OK }
+  /v1/files/{file_key}/meta:
+    parameters:
+      - in: path
+        name: file_key
+        required: true
+        schema: { type: string }
+    get:
+      tags: [Files]
+      summary: Get file metadata
+      operationId: getFileMeta
+      responses:
+        "200": { description: OK }
+  /v1/files/{file_key}/versions:
+    parameters:
+      - in: path
+        name: file_key
+        required: true
+        schema: { type: string }
+    get:
+      tags: [Files]
+      summary: Get file version history
+      operationId: getFileVersions
+      responses:
+        "200": { description: OK }
+  /v1/teams/{team_id}/projects:
+    parameters:
+      - in: path
+        name: team_id
+        required: true
+        schema: { type: string }
+    get:
+      tags: [Projects]
+      summary: List projects in a team
+      operationId: listTeamProjects
+      responses:
+        "200": { description: OK }
+  /v1/projects/{project_id}/meta:
+    parameters:
+      - in: path
+        name: project_id
+        required: true
+        schema: { type: string }
+    get:
+      tags: [Projects]
+      summary: Get project metadata
+      operationId: getProjectMeta
+      responses:
+        "200": { description: OK }
+  /v1/projects/{project_id}/files:
+    parameters:
+      - in: path
+        name: project_id
+        required: true
+        schema: { type: string }
+    get:
+      tags: [Projects]
+      summary: List files in a project
+      operationId: listProjectFiles
+      responses:
+        "200": { description: OK }
+  /v1/files/{file_key}/comments:
+    parameters:
+      - in: path
+        name: file_key
+        required: true
+        schema: { type: string }
+    get:
+      tags: [Comments]
+      summary: Get comments in a file
+      operationId: listFileComments
+      responses:
+        "200": { description: OK }
+    post:
+      tags: [Comments]
+      summary: Add a comment to a file
+      operationId: addFileComment
+      responses:
+        "201": { description: Created }
+  /v1/files/{file_key}/comments/{comment_id}:
+    parameters:
+      - in: path
+        name: file_key
+        required: true
+        schema: { type: string }
+      - in: path
+        name: comment_id
+        required: true
+        schema: { type: string }
+    delete:
+      tags: [Comments]
+      summary: Delete a comment
+      operationId: deleteFileComment
+      responses:
+        "204": { description: No Content }
+  /v1/files/{file_key}/comments/{comment_id}/reactions:
+    parameters:
+      - in: path
+        name: file_key
+        required: true
+        schema: { type: string }
+      - in: path
+        name: comment_id
+        required: true
+        schema: { type: string }
+    get:
+      tags: [Reactions]
+      summary: Get reactions on a comment
+      operationId: listCommentReactions
+      responses:
+        "200": { description: OK }
+    post:
+      tags: [Reactions]
+      summary: Add reaction to a comment
+      operationId: addCommentReaction
+      responses:
+        "201": { description: Created }
+    delete:
+      tags: [Reactions]
+      summary: Remove reaction from a comment
+      operationId: deleteCommentReaction
+      responses:
+        "204": { description: No Content }
+  /v1/teams/{team_id}/components:
+    parameters:
+      - in: path
+        name: team_id
+        required: true
+        schema: { type: string }
+    get:
+      tags: [Components]
+      summary: List team components
+      operationId: listTeamComponents
+      responses:
+        "200": { description: OK }
+  /v1/files/{file_key}/components:
+    parameters:
+      - in: path
+        name: file_key
+        required: true
+        schema: { type: string }
+    get:
+      tags: [Components]
+      summary: List file components
+      operationId: listFileComponents
+      responses:
+        "200": { description: OK }
+components:
+  securitySchemes:
+    personalAccessToken:
+      type: apiKey
+      in: header
+      name: X-Figma-Token
+      description: Personal Access Token authentication for Figma REST API
+    oauth2:
+      type: oauth2
+      description: OAuth 2.0 authentication for registered applications
+      flows:
+        authorizationCode:
+          authorizationUrl: https://www.figma.com/oauth
+          tokenUrl: https://api.figma.com/v1/oauth/token
+          scopes:
+            files:read: Read files
+            file_comments:write: Write file comments
