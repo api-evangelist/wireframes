@@ -1,0 +1,411 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Figma REST API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Figma-Token",
+      "value": "{{X-Figma-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Users",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get current user",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/me"
+          },
+          "docs": "Get current user"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Files",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get file JSON",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/files/:file_key",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get file JSON"
+        },
+        {
+          "info": {
+            "name": "Get specific nodes from a file",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/files/:file_key/nodes",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get specific nodes from a file"
+        },
+        {
+          "info": {
+            "name": "Get file metadata",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/files/:file_key/meta",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get file metadata"
+        },
+        {
+          "info": {
+            "name": "Get file version history",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/files/:file_key/versions",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get file version history"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Images",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Render images of nodes in a file",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/images/:file_key",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Render images of nodes in a file"
+        },
+        {
+          "info": {
+            "name": "Get image fill URLs for a file",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/files/:file_key/images",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get image fill URLs for a file"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Projects",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List projects in a team",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/teams/:team_id/projects",
+            "params": [
+              {
+                "name": "team_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List projects in a team"
+        },
+        {
+          "info": {
+            "name": "Get project metadata",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/projects/:project_id/meta",
+            "params": [
+              {
+                "name": "project_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get project metadata"
+        },
+        {
+          "info": {
+            "name": "List files in a project",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/projects/:project_id/files",
+            "params": [
+              {
+                "name": "project_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List files in a project"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Comments",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get comments in a file",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/files/:file_key/comments",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get comments in a file"
+        },
+        {
+          "info": {
+            "name": "Add a comment to a file",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.figma.com/v1/files/:file_key/comments",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Add a comment to a file"
+        },
+        {
+          "info": {
+            "name": "Delete a comment",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.figma.com/v1/files/:file_key/comments/:comment_id",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "comment_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a comment"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Reactions",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get reactions on a comment",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/files/:file_key/comments/:comment_id/reactions",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "comment_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get reactions on a comment"
+        },
+        {
+          "info": {
+            "name": "Add reaction to a comment",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.figma.com/v1/files/:file_key/comments/:comment_id/reactions",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "comment_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Add reaction to a comment"
+        },
+        {
+          "info": {
+            "name": "Remove reaction from a comment",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.figma.com/v1/files/:file_key/comments/:comment_id/reactions",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "comment_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Remove reaction from a comment"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Components",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List team components",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/teams/:team_id/components",
+            "params": [
+              {
+                "name": "team_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List team components"
+        },
+        {
+          "info": {
+            "name": "List file components",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/files/:file_key/components",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List file components"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

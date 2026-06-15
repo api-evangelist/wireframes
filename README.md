@@ -1,18 +1,21 @@
-# Wireframes
+# Wireframes (wireframes)
 
 Wireframes are low-fidelity visual representations of user interface layouts used in early design stages to establish structure, hierarchy, and functionality before high-fidelity design work begins. Major wireframing tools including Figma, Balsamiq, Axure, UXPin, Sketch, and Miro offer APIs and developer integrations for programmatic access to design assets, metadata, and collaboration workflows.
 
-**Reference:** [https://en.wikipedia.org/wiki/Website_wireframe](https://en.wikipedia.org/wiki/Website_wireframe)
+**APIs.json:** [https://en.wikipedia.org/wiki/Website_wireframe](https://en.wikipedia.org/wiki/Website_wireframe)
 
 ## Scope
 
 - **Type:** Index
-- **Position:** Consuming
-- **Access:** 3rd-Party
 
 ## Tags
 
-Design, Figma, Prototyping, UI Design, UX, Wireframing
+- Design
+- Figma
+- Prototyping
+- UI Design
+- UX
+- Wireframing
 
 ## Timestamps
 
@@ -23,60 +26,57 @@ Design, Figma, Prototyping, UI Design, UX, Wireframing
 
 ### Figma REST API
 
-The Figma REST API provides programmatic access to Figma design files, components, styles, comments, and webhooks. It is the primary developer API for the most widely used wireframing and design collaboration tool.
+The Figma REST API provides programmatic access to Figma design files, components, styles, comments, and webhooks. It is the primary developer API for the most widely used wireframing and design collaboration tool. Fully described in an OpenAPI specification at github.com/figma/rest-api-spec.
 
-**Human URL:** [https://developers.figma.com/docs/rest-api/](https://developers.figma.com/docs/rest-api/)
+- **Human URL:** [https://developers.figma.com/docs/rest-api/](https://developers.figma.com/docs/rest-api/)
+- **Base URL:** `https://api.figma.com`
 
-**Properties:**
+#### Tags
+
+- Design
+- Figma
+- Prototyping
+- UI Design
+- UX
+
+#### Properties
+
 - [Documentation](https://developers.figma.com/docs/rest-api/)
 - [Portal](https://developers.figma.com/)
-- [OpenAPI Spec](https://github.com/figma/rest-api-spec)
+- [OpenAPI](https://github.com/figma/rest-api-spec) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
+- [Postman Collection](collections/wireframes.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/wireframes.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### Balsamiq Cloud API
 
-Balsamiq provides a fast, focused wireframing tool used by lean product teams. Balsamiq Cloud offers project management and asset integration capabilities.
+Balsamiq provides a fast, focused wireframing tool used by lean product teams. Balsamiq Cloud offers API access for project management and asset integration. Balsamiq is widely used for quick, low-fidelity wireframe sketching.
 
-**Human URL:** [https://balsamiq.com/](https://balsamiq.com/)
+- **Human URL:** [https://balsamiq.com/](https://balsamiq.com/)
+- **Base URL:** `https://balsamiq.cloud`
+
+#### Tags
+
+- Balsamiq
+- Design
+- Prototyping
+- Wireframing
+
+#### Properties
+
+- [Documentation](https://balsamiq.com/support/)
+- [Website](https://balsamiq.com/)
+- [Postman Collection](collections/wireframes.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/wireframes.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ## Common Properties
 
-- [Wireframe (Wikipedia)](https://en.wikipedia.org/wiki/Website_wireframe)
-- [Figma Developer Portal](https://developers.figma.com/)
-- [What is Wireframing? (Figma)](https://www.figma.com/resource-library/what-is-wireframing/)
-- [Balsamiq](https://balsamiq.com/)
-- [Figma Wireframe Tool](https://www.figma.com/wireframe-tool/)
-
-## Artifacts
-
-### JSON Schema
-
-| Schema | Description |
-|--------|-------------|
-| [Component Schema](json-schema/wireframes-component-schema.json) | JSON Schema for a wireframe UI component |
-
-### JSON Structure
-
-| Structure | Description |
-|-----------|-------------|
-| [Component Structure](json-structure/wireframes-component-structure.json) | Field-level documentation for wireframe component objects |
-
-### JSON-LD
-
-| Context | Description |
-|---------|-------------|
-| [Wireframes Context](json-ld/wireframes-context.jsonld) | JSON-LD context for wireframe design domain vocabulary |
-
-### Examples
-
-| Example | Description |
-|---------|-------------|
-| [Component Example](examples/wireframes-component-example.json) | Example wireframe component (Navigation Bar) |
-
-### Vocabulary
-
-| Vocabulary | Description |
-|------------|-------------|
-| [Wireframes Vocabulary](vocabulary/wireframes-vocabulary.yml) | Domain vocabulary for wireframing, design systems, and design tools |
+- [Reference](https://en.wikipedia.org/wiki/Website_wireframe)
+- [Portal](https://developers.figma.com/)
+- [Guide](https://www.figma.com/resource-library/what-is-wireframing/)
+- [Website](https://balsamiq.com/)
+- [Tool](https://www.figma.com/wireframe-tool/)
+- [J S O N L D Context](https://raw.githubusercontent.com/api-evangelist/wireframes/refs/heads/main/json-ld/wireframes-context.jsonld)
+- [Vocabulary](https://raw.githubusercontent.com/api-evangelist/wireframes/refs/heads/main/vocabulary/wireframes-vocabulary.yml)
 
 ## Maintainers
 
