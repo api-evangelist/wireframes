@@ -83,7 +83,7 @@ common:
     description: Balsamiq wireframing tool website.
   - url: https://www.figma.com/wireframe-tool/
     name: Figma Wireframe Tool
-    type: Tool
+    type: Tools
     description: Figma's online wireframing tool.
   - url: >-
       https://raw.githubusercontent.com/api-evangelist/wireframes/refs/heads/main/json-ld/wireframes-context.jsonld
