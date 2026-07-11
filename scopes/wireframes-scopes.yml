@@ -1,0 +1,24 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/wireframes-openapi.yml
+schemes:
+- name: oauth2
+  source: openapi/wireframes-openapi.yml
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://www.figma.com/oauth
+    tokenUrl: https://api.figma.com/v1/oauth/token
+  description: OAuth 2.0 authentication for registered applications
+scopes:
+- scope: file_comments:write
+  description: Write file comments
+  flows:
+  - authorizationCode
+  sources:
+  - openapi/wireframes-openapi.yml
+- scope: files:read
+  description: Read files
+  flows:
+  - authorizationCode
+  sources:
+  - openapi/wireframes-openapi.yml

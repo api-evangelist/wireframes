@@ -65,6 +65,10 @@ apis:
         url: https://balsamiq.com/
 
 common:
+  - type: Authentication
+    url: authentication/wireframes-authentication.yml
+  - type: OAuthScopes
+    url: scopes/wireframes-scopes.yml
   - url: https://en.wikipedia.org/wiki/Website_wireframe
     name: Wireframe (Wikipedia)
     type: Reference
