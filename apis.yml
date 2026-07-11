@@ -65,6 +65,10 @@ apis:
         url: https://balsamiq.com/
 
 common:
+  - type: VulnerabilityDisclosure
+    url: security/wireframes-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/wireframes-domain-security.yml
   - type: Authentication
     url: authentication/wireframes-authentication.yml
   - type: OAuthScopes

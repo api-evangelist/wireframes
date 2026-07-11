@@ -1,0 +1,29 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/wireframes-openapi.yml
+summary:
+  types:
+  - apiKey
+  - oauth2
+  api_key_in:
+  - header
+  oauth2_flows:
+  - authorizationCode
+schemes:
+- name: personalAccessToken
+  type: apiKey
+  in: header
+  parameter: X-Figma-Token
+  description: Personal Access Token authentication for Figma REST API
+  sources:
+  - openapi/wireframes-openapi.yml
+- name: oauth2
+  type: oauth2
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://www.figma.com/oauth
+    tokenUrl: https://api.figma.com/v1/oauth/token
+    scopes: 2
+  description: OAuth 2.0 authentication for registered applications
+  sources:
+  - openapi/wireframes-openapi.yml
