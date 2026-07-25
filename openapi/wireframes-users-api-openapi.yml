@@ -1,0 +1,51 @@
+openapi: 3.1.0
+info:
+  title: Figma REST Comments Users API
+  description: 'The Figma REST API enables programmatic access to Figma files, images, projects,
+
+    comments, users, components, and variables. Wireframes and designs can be read,
+
+    images rendered, and comments managed.
+
+    '
+  version: '1.0'
+  contact:
+    name: Figma
+    url: https://developers.figma.com/docs/rest-api/
+servers:
+- url: https://api.figma.com
+  description: Figma REST API production server
+- url: https://api.figma-gov.com
+  description: Figma REST API for Government customers
+security:
+- personalAccessToken: []
+- oauth2: []
+tags:
+- name: Users
+paths:
+  /v1/me:
+    get:
+      tags:
+      - Users
+      summary: Get current user
+      operationId: getMe
+      responses:
+        '200':
+          description: OK
+components:
+  securitySchemes:
+    personalAccessToken:
+      type: apiKey
+      in: header
+      name: X-Figma-Token
+      description: Personal Access Token authentication for Figma REST API
+    oauth2:
+      type: oauth2
+      description: OAuth 2.0 authentication for registered applications
+      flows:
+        authorizationCode:
+          authorizationUrl: https://www.figma.com/oauth
+          tokenUrl: https://api.figma.com/v1/oauth/token
+          scopes:
+            files:read: Read files
+            file_comments:write: Write file comments
