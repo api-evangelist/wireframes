@@ -10,7 +10,20 @@ description: >-
   and collaboration workflows.
 type: Index
 url: https://en.wikipedia.org/wiki/Website_wireframe
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/wireframes.png
 tags:
   - Design
   - Figma
@@ -22,49 +35,122 @@ created: '2025'
 modified: '2026-05-03'
 specificationVersion: '0.19'
 apis:
-  - aid: wireframes:figma-api
-    name: Figma REST API
-    description: >-
-      The Figma REST API provides programmatic access to Figma design files,
-      components, styles, comments, and webhooks. It is the primary developer
-      API for the most widely used wireframing and design collaboration tool.
-      Fully described in an OpenAPI specification at github.com/figma/rest-api-spec.
-    humanURL: https://developers.figma.com/docs/rest-api/
-    baseURL: https://api.figma.com
-    tags:
-      - Design
-      - Figma
-      - Prototyping
-      - UI Design
-      - UX
-    properties:
-      - type: Documentation
-        url: https://developers.figma.com/docs/rest-api/
-      - type: Portal
-        url: https://developers.figma.com/
-      - type: OpenAPI
-        url: https://github.com/figma/rest-api-spec
-
-  - aid: wireframes:balsamiq-api
-    name: Balsamiq Cloud API
-    description: >-
-      Balsamiq provides a fast, focused wireframing tool used by lean product
-      teams. Balsamiq Cloud offers API access for project management and asset
-      integration. Balsamiq is widely used for quick, low-fidelity wireframe
-      sketching.
-    humanURL: https://balsamiq.com/
-    baseURL: https://balsamiq.cloud
-    tags:
-      - Balsamiq
-      - Design
-      - Prototyping
-      - Wireframing
-    properties:
-      - type: Documentation
-        url: https://balsamiq.com/support/
-      - type: Website
-        url: https://balsamiq.com/
-
+- aid: wireframes:balsamiq-api
+  name: Balsamiq Cloud API
+  description: >-
+    Balsamiq provides a fast, focused wireframing tool used by lean product teams. Balsamiq Cloud offers
+    API access for project management and asset integration. Balsamiq is widely used for quick, low-fidelity
+    wireframe sketching.
+  humanURL: https://balsamiq.com/
+  baseURL: https://balsamiq.cloud
+  tags:
+  - Balsamiq
+  - Design
+  - Prototyping
+  - Wireframing
+  properties:
+  - type: Documentation
+    url: https://balsamiq.com/support/
+  - type: Website
+    url: https://balsamiq.com/
+- aid: wireframes:wireframes-comments-api
+  name: Wireframes Comments API
+  description: The Comments API from Wireframes — 2 operation(s) for comments.
+  humanURL: https://developers.figma.com/docs/rest-api/
+  baseURL: https://api.figma.com
+  tags:
+  - Comments
+  properties:
+  - type: OpenAPI
+    url: openapi/wireframes-comments-api-openapi.yml
+  - type: Documentation
+    url: https://developers.figma.com/docs/rest-api/
+  - type: Portal
+    url: https://developers.figma.com/
+- aid: wireframes:wireframes-components-api
+  name: Wireframes Components API
+  description: The Components API from Wireframes — 2 operation(s) for components.
+  humanURL: https://developers.figma.com/docs/rest-api/
+  baseURL: https://api.figma.com
+  tags:
+  - Components
+  properties:
+  - type: OpenAPI
+    url: openapi/wireframes-components-api-openapi.yml
+  - type: Documentation
+    url: https://developers.figma.com/docs/rest-api/
+  - type: Portal
+    url: https://developers.figma.com/
+- aid: wireframes:wireframes-files-api
+  name: Wireframes Files API
+  description: The Files API from Wireframes — 4 operation(s) for files.
+  humanURL: https://developers.figma.com/docs/rest-api/
+  baseURL: https://api.figma.com
+  tags:
+  - Files
+  properties:
+  - type: OpenAPI
+    url: openapi/wireframes-files-api-openapi.yml
+  - type: Documentation
+    url: https://developers.figma.com/docs/rest-api/
+  - type: Portal
+    url: https://developers.figma.com/
+- aid: wireframes:wireframes-images-api
+  name: Wireframes Images API
+  description: The Images API from Wireframes — 2 operation(s) for images.
+  humanURL: https://developers.figma.com/docs/rest-api/
+  baseURL: https://api.figma.com
+  tags:
+  - Images
+  properties:
+  - type: OpenAPI
+    url: openapi/wireframes-images-api-openapi.yml
+  - type: Documentation
+    url: https://developers.figma.com/docs/rest-api/
+  - type: Portal
+    url: https://developers.figma.com/
+- aid: wireframes:wireframes-projects-api
+  name: Wireframes Projects API
+  description: The Projects API from Wireframes — 3 operation(s) for projects.
+  humanURL: https://developers.figma.com/docs/rest-api/
+  baseURL: https://api.figma.com
+  tags:
+  - Projects
+  properties:
+  - type: OpenAPI
+    url: openapi/wireframes-projects-api-openapi.yml
+  - type: Documentation
+    url: https://developers.figma.com/docs/rest-api/
+  - type: Portal
+    url: https://developers.figma.com/
+- aid: wireframes:wireframes-reactions-api
+  name: Wireframes Reactions API
+  description: The Reactions API from Wireframes — 1 operation(s) for reactions.
+  humanURL: https://developers.figma.com/docs/rest-api/
+  baseURL: https://api.figma.com
+  tags:
+  - Reactions
+  properties:
+  - type: OpenAPI
+    url: openapi/wireframes-reactions-api-openapi.yml
+  - type: Documentation
+    url: https://developers.figma.com/docs/rest-api/
+  - type: Portal
+    url: https://developers.figma.com/
+- aid: wireframes:wireframes-users-api
+  name: Wireframes Users API
+  description: The Users API from Wireframes — 1 operation(s) for users.
+  humanURL: https://developers.figma.com/docs/rest-api/
+  baseURL: https://api.figma.com
+  tags:
+  - Users
+  properties:
+  - type: OpenAPI
+    url: openapi/wireframes-users-api-openapi.yml
+  - type: Documentation
+    url: https://developers.figma.com/docs/rest-api/
+  - type: Portal
+    url: https://developers.figma.com/
 common:
   - type: AgenticAccess
     url: agentic-access/wireframes-agentic-access.yml
