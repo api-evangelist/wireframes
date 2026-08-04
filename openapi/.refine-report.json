@@ -1,0 +1,26 @@
+{
+  "provider": "wireframes",
+  "sources": [
+    "wireframes-comments-api-openapi.yml",
+    "wireframes-components-api-openapi.yml",
+    "wireframes-files-api-openapi.yml",
+    "wireframes-images-api-openapi.yml",
+    "wireframes-projects-api-openapi.yml",
+    "wireframes-reactions-api-openapi.yml",
+    "wireframes-users-api-openapi.yml"
+  ],
+  "outputs": [
+    "wireframes-comments-api-openapi.yml",
+    "wireframes-components-api-openapi.yml",
+    "wireframes-files-api-openapi.yml",
+    "wireframes-images-api-openapi.yml",
+    "wireframes-projects-api-openapi.yml",
+    "wireframes-reactions-api-openapi.yml",
+    "wireframes-users-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
