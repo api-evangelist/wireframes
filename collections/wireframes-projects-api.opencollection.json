@@ -1,0 +1,80 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Figma REST Comments Projects API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Figma-Token",
+      "value": "{{X-Figma-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Projects",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List projects in a team",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/teams/:team_id/projects",
+            "params": [
+              {
+                "name": "team_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List projects in a team"
+        },
+        {
+          "info": {
+            "name": "Get project metadata",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/projects/:project_id/meta",
+            "params": [
+              {
+                "name": "project_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get project metadata"
+        },
+        {
+          "info": {
+            "name": "List files in a project",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/projects/:project_id/files",
+            "params": [
+              {
+                "name": "project_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List files in a project"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

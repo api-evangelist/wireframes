@@ -1,0 +1,95 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Figma REST Comments Reactions API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Figma-Token",
+      "value": "{{X-Figma-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Reactions",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get reactions on a comment",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/files/:file_key/comments/:comment_id/reactions",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "comment_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get reactions on a comment"
+        },
+        {
+          "info": {
+            "name": "Add reaction to a comment",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.figma.com/v1/files/:file_key/comments/:comment_id/reactions",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "comment_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Add reaction to a comment"
+        },
+        {
+          "info": {
+            "name": "Remove reaction from a comment",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.figma.com/v1/files/:file_key/comments/:comment_id/reactions",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "comment_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Remove reaction from a comment"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

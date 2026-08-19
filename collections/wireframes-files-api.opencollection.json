@@ -1,0 +1,98 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Figma REST Comments Files API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Figma-Token",
+      "value": "{{X-Figma-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Files",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get file JSON",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/files/:file_key",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get file JSON"
+        },
+        {
+          "info": {
+            "name": "Get specific nodes from a file",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/files/:file_key/nodes",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get specific nodes from a file"
+        },
+        {
+          "info": {
+            "name": "Get file metadata",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/files/:file_key/meta",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get file metadata"
+        },
+        {
+          "info": {
+            "name": "Get file version history",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/files/:file_key/versions",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get file version history"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

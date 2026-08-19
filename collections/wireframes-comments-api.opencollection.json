@@ -1,0 +1,85 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Figma REST Comments API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Figma-Token",
+      "value": "{{X-Figma-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Comments",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get comments in a file",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/files/:file_key/comments",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get comments in a file"
+        },
+        {
+          "info": {
+            "name": "Add a comment to a file",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.figma.com/v1/files/:file_key/comments",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Add a comment to a file"
+        },
+        {
+          "info": {
+            "name": "Delete a comment",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.figma.com/v1/files/:file_key/comments/:comment_id",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "comment_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a comment"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,62 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Figma REST Comments Images API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Figma-Token",
+      "value": "{{X-Figma-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Images",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Render images of nodes in a file",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/images/:file_key",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Render images of nodes in a file"
+        },
+        {
+          "info": {
+            "name": "Get image fill URLs for a file",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/files/:file_key/images",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get image fill URLs for a file"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

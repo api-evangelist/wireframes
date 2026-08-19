@@ -1,0 +1,62 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Figma REST Comments Components API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Figma-Token",
+      "value": "{{X-Figma-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Components",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List team components",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/teams/:team_id/components",
+            "params": [
+              {
+                "name": "team_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List team components"
+        },
+        {
+          "info": {
+            "name": "List file components",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.figma.com/v1/files/:file_key/components",
+            "params": [
+              {
+                "name": "file_key",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List file components"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
