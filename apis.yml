@@ -87,6 +87,8 @@ apis:
   humanURL: https://developers.figma.com/docs/rest-api/
   baseURL: https://api.figma.com
   tags:
+  - File
+  tags_raw:
   - Files
   properties:
   - type: OpenAPI
@@ -101,6 +103,8 @@ apis:
   humanURL: https://developers.figma.com/docs/rest-api/
   baseURL: https://api.figma.com
   tags:
+  - Image
+  tags_raw:
   - Images
   properties:
   - type: OpenAPI
@@ -115,6 +119,8 @@ apis:
   humanURL: https://developers.figma.com/docs/rest-api/
   baseURL: https://api.figma.com
   tags:
+  - Project
+  tags_raw:
   - Projects
   properties:
   - type: OpenAPI
@@ -143,6 +149,8 @@ apis:
   humanURL: https://developers.figma.com/docs/rest-api/
   baseURL: https://api.figma.com
   tags:
+  - User
+  tags_raw:
   - Users
   properties:
   - type: OpenAPI
