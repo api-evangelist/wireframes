@@ -1,13 +1,7 @@
 {
   "provider": "wireframes",
   "sources": [
-    "wireframes-comments-api-openapi.yml",
-    "wireframes-components-api-openapi.yml",
-    "wireframes-files-api-openapi.yml",
-    "wireframes-images-api-openapi.yml",
-    "wireframes-projects-api-openapi.yml",
-    "wireframes-reactions-api-openapi.yml",
-    "wireframes-users-api-openapi.yml"
+    "_original/wireframes-openapi.yml"
   ],
   "outputs": [
     "wireframes-comments-api-openapi.yml",
@@ -21,6 +15,18 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "wireframes-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "wireframes-comments-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "wireframes-components-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "wireframes-files-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "wireframes-images-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "wireframes-projects-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "wireframes-reactions-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "wireframes-users-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
