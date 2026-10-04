@@ -1,0 +1,34 @@
+slug: wireframes
+provider: Wireframes
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 2
+edges:
+- tag: Components
+  spec_file: wireframes-components-api-openapi.yml
+  capability_id: BC-4200.30
+  capability_id_l1: BC-4200
+  capability_name: Software Design Management
+  confidence: 0.7
+  evidence: '"List team components"; "List file components"'
+  reason: Team- and file-level component libraries are the shared design-system artefacts referenced by
+    Software Design Management ("anchored in shared design systems").
+- tag: Files
+  spec_file: wireframes-files-api-openapi.yml
+  capability_id: BC-4200.30
+  capability_id_l1: BC-4200
+  capability_name: Software Design Management
+  confidence: 0.7
+  evidence: '"Get file JSON"; "Get file version history"; "The Figma REST API enables programmatic access
+    to Figma files ... Wireframes and designs can be read"'
+  reason: Programmatic read of design file structure, nodes, metadata and version history is access to
+    UI/UX design artefacts, i.e. Software Design Management rather than generic document storage.

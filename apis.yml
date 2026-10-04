@@ -171,6 +171,9 @@ apis:
   - type: Portal
     url: https://developers.figma.com/
 common:
+  - type: CapabilityMap
+    url: capabilities/wireframes-capability-edges.yml
+    name: Wireframes Business Capability Map
   - type: AgenticAccess
     url: agentic-access/wireframes-agentic-access.yml
   - type: VulnerabilityDisclosure
