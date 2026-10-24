@@ -9,6 +9,9 @@ artifacts:
   authentication/wireframes-authentication.yml:
     method: derived
     evidence: declared in the artifact
+  capabilities/wireframes-capability-edges.yml:
+    method: unknown
+    evidence: no authorship recorded
   collections/wireframes-comments-api.opencollection.json:
     method: derived
     evidence: openapi/wireframes-comments-api
