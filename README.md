@@ -1,4 +1,4 @@
-# Wireframes (wireframes)
+# wireframes
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,85 +64,22 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Wireframes are low-fidelity visual representations of user interface layouts used in early design stages to establish structure, hierarchy, and functionality before high-fidelity design work begins. Major wireframing tools including Figma, Balsamiq, Axure, UXPin, Sketch, and Miro offer APIs and developer integrations for programmatic access to design assets, metadata, and collaboration workflows.
+## wireframes on APIs.io
 
-**APIs.json:** [https://en.wikipedia.org/wiki/Website_wireframe](https://en.wikipedia.org/wiki/Website_wireframe)
+Everything profiled for wireframes is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/wireframes/](https://apis.io/providers/wireframes/)** — or go straight to one of the APIs or properties below.
 
-## Scope
+## API Evangelist rating
 
-- **Type:** Index
+Not yet rated. See [apis.io/providers/wireframes/](https://apis.io/providers/wireframes/).
 
-## Tags
+## How this profile is made
 
-- Design
-- Figma
-- Prototyping
-- UI Design
-- UX
-- Wireframing
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## Timestamps
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for wireframes: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-- **Created:** 2025
-- **Modified:** 2026-05-03
+## Open an issue
 
-## APIs
-
-### Figma REST API
-
-The Figma REST API provides programmatic access to Figma design files, components, styles, comments, and webhooks. It is the primary developer API for the most widely used wireframing and design collaboration tool. Fully described in an OpenAPI specification at github.com/figma/rest-api-spec.
-
-- **Human URL:** [https://developers.figma.com/docs/rest-api/](https://developers.figma.com/docs/rest-api/)
-- **Base URL:** `https://api.figma.com`
-
-#### Tags
-
-- Design
-- Figma
-- Prototyping
-- UI Design
-- UX
-
-#### Properties
-
-- [Documentation](https://developers.figma.com/docs/rest-api/)
-- [Portal](https://developers.figma.com/)
-- [OpenAPI](https://github.com/figma/rest-api-spec) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/wireframes.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/wireframes.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Balsamiq Cloud API
-
-Balsamiq provides a fast, focused wireframing tool used by lean product teams. Balsamiq Cloud offers API access for project management and asset integration. Balsamiq is widely used for quick, low-fidelity wireframe sketching.
-
-- **Human URL:** [https://balsamiq.com/](https://balsamiq.com/)
-- **Base URL:** `https://balsamiq.cloud`
-
-#### Tags
-
-- Balsamiq
-- Design
-- Prototyping
-- Wireframing
-
-#### Properties
-
-- [Documentation](https://balsamiq.com/support/)
-- [Website](https://balsamiq.com/)
-- [Postman Collection](collections/wireframes.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/wireframes.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [Reference](https://en.wikipedia.org/wiki/Website_wireframe)
-- [Portal](https://developers.figma.com/)
-- [Guide](https://www.figma.com/resource-library/what-is-wireframing/)
-- [Website](https://balsamiq.com/)
-- [Tool](https://www.figma.com/wireframe-tool/)
-- [J S O N L D Context](https://raw.githubusercontent.com/api-evangelist/wireframes/refs/heads/main/json-ld/wireframes-context.jsonld)
-- [Vocabulary](https://raw.githubusercontent.com/api-evangelist/wireframes/refs/heads/main/vocabulary/wireframes-vocabulary.yml)
-
-## Maintainers
-
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/wireframes/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
